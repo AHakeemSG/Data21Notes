@@ -68,7 +68,7 @@ class Car:
 
     # Initialising the class  - self should always be the first parameter in a class
     def __init__(self, manufacturer, model, engine_size, num_of_cylinders, car_year, num_of_wheels,
-                 max_speed, colour, number_of_doors, num_of_windows):
+                 max_speed, colour, number_of_doors, num_of_windows, current_speed):
         self.manufacturer = manufacturer
         self.model = model
         self.engine_size = engine_size
