@@ -81,8 +81,8 @@ class Car:
         self.num_of_windows = num_of_windows
         self.current_speed = current_speed
 
-    # Method of car details
-    def __details__(self):
+    # Method of car details through class representation
+    def __repr__(self):  # repr is the representation function
         car_details = f"Manufacturer: {self.manufacturer + ',': <20} Model: {self.model + ',': <15} " \
                       f"Engine Size: {self.engine_size + ',': <15} Number of Cylinders: {self.num_of_cylinders + ',': <10}" \
                       f"Car Year: {self.car_year + ',': <10} Number of Wheels: {self.num_of_wheels + ',': <10}" \
@@ -103,7 +103,7 @@ class Car:
 
 
 # Cars data
-mercedes_benz = Car("Mercedes Benz", "C63", "4.0-liter V8", 4, 2021, 4, 155, "Black", 2, 4)
+mercedes_benz = Car("Mercedes Benz", "C63", "4.0-liter V8", 4, 2021, 4, 155, "Black", 2, 4, 0)
 ferrari = Car("Ferrari", "Enzo", "6.0-liter V12", 12, 2002, 4, 218, "Red", 2, 2)
 toyota = Car("Toyota", "Auris", "1.6", 4, 2016, 4, 110, "White", 4, 4)
 
