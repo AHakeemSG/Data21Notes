@@ -1,49 +1,49 @@
-# # # Naming conventions for classes, use CamelCase
-# # class Dog:
-# #     animal_kind = "canine"
-# #
-# #     def bark(self):  # Method - this method is referring to he class of Dog
-# #         return "woof"
-#
-#
-# # # Example class
-# # class AmazingDog:
-# #     animal_kind = "canine"
-# #
-# #     def bark(self):
-# #         print(self.animal_kind)  # If we create a class, we have to reference self before the variable
-# #         return "woof"
-# #
-# #
-# # Bob = AmazingDog()
-# # Sue = AmazingDog()
-# # Bob.animal_kind = "dolphin"
-# # print(bob.animal_kind)
-#
-#
-# # Example class initialisation
-# class AmazingDog:
-#
-#     def __init__(self, animal_kind):  # initialisation: making an instance of class upon creation
-#         self.animal_kind = "canine"
-#         self.bark()  # calling in class methods into the initialization method
-#         #  _is_alive = True  # One _ hides the is_alive
-#         # __is_alive = True  # Two __ doesnt allow us to access the is_alive
-#
-#     def bark(self):
-#         print(self.animal_kind)
-#         return "woof"
-#
-#     def set_is_alive(self, alive_status):
-#         self.__is_alive = alive_status  # allows people to access and change things within the method, not outside it
-#
-#
-# Bob = AmazingDog("canine")
-# Sue = AmazingDog("dolphin")
-# print(Bob.animal_kind)
-# print(Sue.animal_kind)
-# print(Bob.get__is_alive())
-# # Bob.__is_alive = False
+# Naming conventions for classes, use CamelCase
+class Dog:
+    animal_kind = "canine"
+
+    def bark(self):  # Method - this method is referring to he class of Dog
+        return "woof"
+
+
+# Example class
+class AmazingDog:
+    animal_kind = "canine"
+
+    def bark(self):
+        print(self.animal_kind)  # If we create a class, we have to reference self before the variable
+        return "woof"
+
+
+Bob = AmazingDog()
+Sue = AmazingDog()
+Bob.animal_kind = "dolphin"
+print(bob.animal_kind)
+
+
+# Example class initialisation
+class AmazingDog:
+
+    def __init__(self, animal_kind):  # initialisation: making an instance of class upon creation
+        self.animal_kind = "canine"
+        self.bark()  # calling in class methods into the initialization method
+        #  _is_alive = True  # One _ hides the is_alive
+        # __is_alive = True  # Two __ doesnt allow us to access the is_alive
+
+    def bark(self):
+        print(self.animal_kind)
+        return "woof"
+
+    def set_is_alive(self, alive_status):
+        self.__is_alive = alive_status  # allows people to access and change things within the method, not outside it
+
+
+Bob = AmazingDog("canine")
+Sue = AmazingDog("dolphin")
+print(Bob.animal_kind)
+print(Sue.animal_kind)
+print(Bob.get__is_alive())
+# Bob.__is_alive = False
 
 
 # Exercise: Create a car class
