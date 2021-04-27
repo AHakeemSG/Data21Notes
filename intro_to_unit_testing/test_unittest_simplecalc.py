@@ -22,5 +22,7 @@ class Calctests(unittest.TestCase):
     def test_multiply(self):
         self.assertEqual(self.calc.multiply(2, 3), 6)
 
+    def test_divide(self):
+        self.assertEqual(self.calc.divide(10, 2), 5)
 
-# pytest
+
